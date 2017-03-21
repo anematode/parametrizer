@@ -2,12 +2,9 @@ from __future__ import division
 import sys,re,os
 
 # Written by Timothy Herchen, 12/19/16.
-# The following procedures parametrize (parametize?) many equations the user gives in a GUI input.
-
-# Mac only! 
+# The following procedures parametrize (parametize?) many equations the user enters into the command line.
 
 exprwidth = 100
-# Operating system detected.
 
 keywords = ["\\sqrt","\\tan",\
             "\\arctan",\
@@ -301,5 +298,3 @@ def parametize(inputequation):
 while (True):
     n = raw_input("> ")
     print parametize(n)
-
-
